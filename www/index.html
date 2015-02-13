@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bootstrap 101 </title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+<style>
+.bs-docs-example {
+  margin:50px 0;
+}
+.scrollspy-example {
+    height: 200px;
+    overflow: auto;
+    position: relative;
+	
+}
+</style>
+</head>
+<body>
+  <div class="container">
+	<h1>Bootstrap...</h1>
+    <a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">Launch demo modal</a>
+    <div id="myModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">?</button>
+			<h3 id="myModalLabel">Заголовок</h3>
+		</div>
+		<div class="modal-body">
+			<h4>Текст в теле</h4>
+			<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. <a href="#" rel="tooltip" title="first tooltip">hover over me</a></p>
+			<h4>Всплывающий контент</h4>
+			<p>При наведении на эту <a data-toggle='tooltip' data-original-title="Заголовок" href="#" class="btn popover-test" data-content="А здесь супер полезный контент. Завораживает и вдохновляет, неправда ли?">кнопку</a> должен появиться всплывающий контент.</p>
+			<h4>Всплывающая подсказка (Tooltips)</h4>
+			<p><a data-original-title="Подсказка" data-toggle='tooltip' href="#" class="tooltip-test">При наведении на эту ссылку</a> и <a data-toggle='tooltip' data-original-title="Еще Подсказка" href="#" class="tooltip-test">здесь</a> появится всплывающая подсказка.</p>
+			<hr>
+			<h4>Контент превышающий высоту всплывающего окна</h4>
+			<p>Мы выставили фиксированную высоту <code>max-height</code> для <code>.modal-body</code>. При превышении высоты всплывающего окна контентом появляется скроллбар, это видно на примере текста "lorem ipsum" ниже.</p>
+			<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+			<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal">Закрыть</button>
+			<button class="btn btn-primary">Сохранить</button>
+		</div>
+	</div>
+	<!--scrollspy-->
+	<div class="bs-docs-example span 6">
+		<div class="navbar navbar-static" id="navbarExample">
+			<div class="navbar-inner">
+				<div style="width: auto;" class="container">
+					<a href="#" class="brand">Имя проекта</a>
+					<ul class="nav">
+						<li class="active"><a href="#fat">@fat</a></li>
+						<li class=""><a href="#mdo">@mdo</a></li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">Выпадающий список <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class=""><a href="#one">Один</a></li>
+								<li class=""><a href="#two">Два</a></li>
+								<li class="divider"></li>
+								<li class=""><a href="#three">Три</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="scrollspy-example" data-offset="0" data-target="#navbarExample" data-spy="scroll">
+			<h4 id="fat">@fat</h4>
+			<p>Было восемь часов утра - время, когда офицеры, чиновники и приезжие обыкновенно после жаркой, душной ночи купались в море и потом шли в павильон пить кофе или чай. Иван Андреич Лаевский, молодой человек лег двадцати восьми, худощавый блондин, в фуражке министерства финансов и в туфлях, придя купаться, застал на берегу много знакомых и между ними своего приятеля, военного доктора Самойленко.</p>
+			<h4 id="mdo">@mdo</h4>
+			<p>С большой стриженой головой, без шеи, красный, носастый, с мохнатыми черными бровями и с седыми бакенами, толстый, обрюзглый, да еще вдобавок с хриплым армейским басом, этот Самойленко на всякого вновь приезжавшего производил неприятное впечатление бурбона и хрипуна, но проходило два-три дня после первого знакомств, и лицо его начинало казаться необыкновенна добрым, милым и даже красивым. Несмотря на свою неуклюжесть и грубоватый тон. эго был человек смирный, безгранично добрый, благодушный и обязательный.</p>
+			<h4 id="one">Один</h4>
+			Со всеми в городе он был на "ты", всем давал деньги взаймы, всех лечил, сватал, мирил, устраивал пикники, на которых жарил шашлык и варил очень вкусную уху из кефалей; всегда он за кого-нибудь хлопотал и просил и всегда чему-нибудь радовался. По общему мнению, он был безгрешен, и водились за ним только две слабости: во-первых, он стыдился своей доброты и старался маскировать ее суровым взглядом и напускною грубостью, и, во-вторых, он любил, чтобы фельдшера и солдаты называли его вашим превосходительством, хотя был только статским советником.<p></p>
+			<h4 id="two">Два</h4>
+			<p>Я недавно читал у одного французского ученого, что львиная морда совсем не похожа на человеческий лик, как думают ученыи. И насщот этого мы поговорим. Приежжайте, сделайте милость. Приежжайте хоть завтра например. Мы теперь постное едим, но для Вас будим готовить скоромное. Дочь моя Наташенька просила Вас, чтоб Вы с собой какие нибудь умные книги привезли. Она у меня эманципе все у ней дураки только она одна умная. Молодеж теперь я Вам скажу, дает себя знать. Дай им бог! Через неделю ко мне прибудет брат мой Иван (Маиор), человек хороший но между нами сказать, Бурбон и наук не любит.</p>
+			<h4 id="three">Три</h4>
+			<p>Это письмо должен Вам доставить мой ключник Трофим ровно в 8 часов вечера. Если же привезет его пожже, то побейте его по щекам, по профессорски, нечего с этим племенем церемонится. Если доставит пожже то значит в кабак анафема заходил. Обычай ездить к соседям не нами выдуман не нами и окончится, а потому непременно приежжайте с машинками и книгами. Я бы сам к Вам поехал, да конфузлив очень и смелости не хватает.</p>
+			<p>Этого не может быть, потому что этого не может быть никогда. Как Вы могли видеть на солнце пятны, если на солнце нельзя глядеть простыми человеческими глазами, и для чего на нем пятны, если и без них можно обойтиться? Из какого мокрого тела сделаны эти самые пятны, если они не сгорают? Может быть, по-вашему и рыбы живут на солнце? Извените меня дурмана ядовитого, что так глупо съострил! Ужасно я предан науке! Рубль сей парус девятнадцатого столетия для меня не имеет никакой цены, наука его затемнила у моих глаз своими дальнейшими крылами. Всякое открытие терзает меня как гвоздик в спине. Хотя я невежда и старосветский помещик, а все же таки негодник старый занимаюсь наукой и открытиями, которые собственными руками произвожу и наполняю свою нелепую головешку, свой дикий череп мыслями и комплектом величайших знаний. Матушка природа есть книга, которую надо читать и видеть.</p>
+		</div>
+	</div>
+	<div class="bs-docs-example tooltip-demo">
+		<ul class="bs-docs-tooltip-examples">
+			<li><a data-placement="top" data-toggle='tooltip' rel="tooltip" href="#" data-original-title="Tooltip on top">Tooltip on top</a></li>
+			<li><a data-placement="right" data-toggle='tooltip' rel="tooltip" href="#" data-original-title="Tooltip on right">Tooltip on right</a></li>
+			<li><a data-placement="bottom" data-toggle='tooltip' rel="tooltip" href="#" data-original-title="Tooltip on bottom">Tooltip on bottom</a></li>
+			<li><a data-placement="left" data-toggle='tooltip' rel="tooltip" href="#" data-original-title="Tooltip on left">Tooltip on left</a></li>
+		</ul>
+	</div>
+	<div style="padding-bottom: 24px;" class="bs-docs-example">
+		<a data-toggle="popover" data-content="And here's some amazing content. It's very engaging. right?" rel="popover" class="btn btn-large btn-danger" href="#" data-original-title="A Title">Click to toggle popover</a>
+	</div>
+</div>
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-tooltip.js"></script>
+	<script>
+	$(function () { $("[data-toggle='tooltip']").tooltip(); });
+	$('[data-toggle="popover"]').popover({trigger: 'hover','placement': 'top'});
+	</script>
+</body>
+</html>
